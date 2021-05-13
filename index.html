@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://kit.fontawesome.com/139d4ec14f.js" crossorigin="anonymous" async></script>
+	<title>toDo's</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- animate.css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+	<header>
+		<h1>toDo's</h1>
+
+	<!-- fancy input button thingi -->
+	<div class="input-group mb-3">
+		<input class="form-control" id="userinput" type="text" placeholder="What's Up?" >
+		<div class="input-group-append">
+		  <button id="enter" class="btn btn-dark" type="button">Enter</button>
+		</div>
+	</div>
+	<ul class="listContainer"></ul>
+	</header>
+
+	<!-- joke section -->
+	<div id="roboWrapper" class="container">
+		<img id="roboGif" src="./robo.gif" alt="talkin robot">
+        <button id="jokeButton" class="btn btn-dark">Tell Me A Joke</button>
+        <audio id="audio" controls hidden ></audio>
+    </div>
+	
+	<!-- script -->
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="jokeScript.js"></script>
+</body>
+</html>
